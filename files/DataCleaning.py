@@ -3,12 +3,14 @@ from importData import Customers, Products, Regions, Returns, Stores,Transaction
 
 
 # Calculate the empty cells
-print(Customers.isnull().sum())
-print(Products.isnull().sum())
-print(Regions.isnull().sum())
-print(Returns.isnull().sum())
-print(Stores.isnull().sum())
-print(Transactions.isnull().sum())
+
+if __name__ == "__main__":
+  print(Customers.isnull().sum())
+  print(Products.isnull().sum())
+  print(Regions.isnull().sum())
+  print(Returns.isnull().sum())
+  print(Stores.isnull().sum())
+  print(Transactions.isnull().sum())
 
 
 
