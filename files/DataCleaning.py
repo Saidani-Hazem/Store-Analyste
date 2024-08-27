@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
 
 #remove rows with empty cells
-Transactions = Products.dropna()
+Transactions = Transactions.dropna()
 
 
 
@@ -42,11 +42,10 @@ Stores = Stores.drop_duplicates(subset=['store_name'])
 
 
 # fix Some Data Type
-Transactions['product_retail_price'] = Transactions['product_retail_price'].astype(float)
-Transactions['product_cost'] = Transactions['product_cost'].astype(float)
+Products['product_retail_price'] = Products['product_retail_price'].astype(float)
+Products['product_cost'] = Products['product_cost'].astype(float)
 Returns['return_date'] = pd.to_datetime(Returns['return_date'])
 Customers['birthdate'] = pd.to_datetime(Customers['birthdate'])
-
 
 # Fix Some Data Format
 

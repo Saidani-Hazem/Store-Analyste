@@ -45,7 +45,6 @@ plt.title('Distribution of Gender', fontsize=16, fontweight='bold')
 plt.show()
 
 
-
 # other one with countPlot
 sb.countplot(x='member_card' , data=Customers)
 plt.title('Member Card Distribution')
